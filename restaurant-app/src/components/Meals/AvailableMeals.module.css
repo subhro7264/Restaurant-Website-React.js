@@ -3,14 +3,27 @@
     width: 90%;
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
+    background-color: aliceblue;
+    border-radius: 10px;
   }
   
   .meals ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding:15px;
   }
   
+  .name{
+    font-weight: bold;
+  }
+  .description{
+    font-style: italic;
+    font-size: small;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .price{
+    color: brown;
+  }
   @keyframes meals-appear {
     from {
       opacity: 0;
