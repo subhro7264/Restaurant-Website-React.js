@@ -1,11 +1,13 @@
 .div{
-    background-color: rgb(61, 203, 26);
-    height:10rem;
-}
-.form{
-    margin-top: 5rem;
+    background-color: rgba(61, 203, 26, 0.188);
+    height:15rem;
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    
+}
+.form{
+   
     
 }

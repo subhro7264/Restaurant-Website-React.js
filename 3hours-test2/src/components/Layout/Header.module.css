@@ -1,9 +1,9 @@
   .cart{
-    background-color: rgba(214, 207, 67, 0.862);
+    background-color: rgba(214, 207, 67, 0.522);
     display: flex;
     justify-content: space-around;
-    color: rgb(107, 19, 119);
-    border-radius: 10px;
+    color: rgb(113, 9, 113);
+    
   }
   .cartButton{
     background-color: rgb(36, 180, 125);

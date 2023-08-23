@@ -29,6 +29,7 @@ const addToCartHandler=(amount)=>{
             <div>
               <h3> : :{item.price}  : :</h3>
             </div>
+            <div><h3> {medCtx.amount}</h3></div>
             <button onClick={addToCartHandler}> Add To Cart</button>
           </div>
         ))}
