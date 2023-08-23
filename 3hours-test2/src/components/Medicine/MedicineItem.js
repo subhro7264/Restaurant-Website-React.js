@@ -1,16 +1,37 @@
 import React, { Fragment, useContext } from "react";
 
-import CardContext from "../store/cart-context";
+import classes from "./MedicineItem.module.css";
+import CartContext  from '../../store/cart-context'
 
-const MedicineItem = () => {
-  const cartCtx = useContext(CardContext);
+const MedicineItem = (props) => {
+const medCtx=useContext(CartContext);
+
+const addToCartHandler=(amount)=>{
+  medCtx.addItem({
+    id:props.id,
+    name:props.name,
+    amount:amount,
+    price:props.price
+  });
+
+}
   return (
     <Fragment>
-      <div>
-        <div>{cartCtx.name}</div>
-        <div>{cartCtx.description}</div>
-        <div>{cartCtx.price}</div>
-        <div>{cartCtx.amount}</div>
+      <div >
+        {props.items.map((item) => (
+          <div className={classes.list}>
+            <div>
+              <h3>{item.name} :</h3>
+            </div>
+            <div>
+              <h3> : : {item.description} :</h3>
+            </div>
+            <div>
+              <h3> : :{item.price}  : :</h3>
+            </div>
+            <button onClick={addToCartHandler}> Add To Cart</button>
+          </div>
+        ))}
       </div>
     </Fragment>
   );

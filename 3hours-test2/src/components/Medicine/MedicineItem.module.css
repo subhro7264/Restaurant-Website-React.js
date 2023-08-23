@@ -1,0 +1,6 @@
+.list{
+    display: flex;
+   align-items: center;
+   background-color: bisque;
+   justify-content: center;
+}

@@ -2,7 +2,7 @@
 import React from 'react'
 import Header from './components/Layout/Header';
 import Med from './components/Medicine/Med';
-import CartProvider from './components/store/CartProvider'
+import CartProvider from './store/CartProvider'
 import './App.css';
 
 function App() {
